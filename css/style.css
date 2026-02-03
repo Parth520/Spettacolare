@@ -1268,6 +1268,12 @@ option {
     .social-links {
         justify-content: center;
     }
+   .about-image {
+        height: 400px;
+    }
+    .gallery-item {
+        height: 260px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1280,22 +1286,12 @@ option {
     .gallery-grid {
         grid-template-columns: 1fr;
     }
-}
-
-@media (max-width: 768px) {
-    .about-image {
-        height: 400px;
-    }
-    .gallery-item {
-        height: 260px;
-    }
-}
-
-@media (max-width: 480px) {
-    .about-image {
+   .about-image {
         height: 300px;
     }
     .gallery-item {
         height: 220px;
     }
+   
 }
+
