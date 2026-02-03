@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spettacolare - Authentic Italian Restaurant | Indiranagar, Bengaluru</title>
+    <meta name="description" content="Experience authentic Italian cuisine in Bengaluru. Wood-fired pizzas, handmade pasta, and Italian desserts. Reserve your table now.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Spettacolare</h1>
+                <span class="nav-tagline">Authentic Italian Flavours</span>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#reservations" class="btn-reserve">Reserve Table</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text fade-in">
+                <h1 class="hero-title">Spettacolare</h1>
+                <p class="hero-subtitle">Authentic Italian Flavours. Crafted with Passion.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="#reservations" class="btn btn-secondary">Reserve Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🍽️</div>
+                    <h3>Dine-In Experience</h3>
+                    <p>Elegant ambience with attentive service</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌿</div>
+                    <h3>Outdoor Seating</h3>
+                    <p>Al fresco dining in Indiranagar</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Vegan-Friendly</h3>
+                    <p>Delicious plant-based options</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Family-Friendly</h3>
+                    <p>Perfect for all occasions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="img/outside.jpg" alt="About Spettacolare Restaurant">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-label">Our Story</span>
+                    <h2 class="section-title">The Soul of Italy in Bengaluru</h2>
+                    <p class="about-text">
+                        At Spettacolare, we bring the soul of Italy to the heart of Bengaluru. Inspired by traditional Italian kitchens and time-honoured recipes, our chefs craft every dish using premium ingredients, authentic techniques, and an uncompromising love for flavour.
+                    </p>
+                    <p class="about-text">
+                        From handmade pasta and wood-fired Neapolitan pizzas to indulgent Italian desserts, every plate is a celebration of simplicity and elegance. Whether you're here for a romantic dinner, a casual meal with friends, or a special celebration, Spettacolare
+                        promises a warm ambience and unforgettable food.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">12+</span>
+                            <span class="stat-label">Signature Dishes</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4.3★</span>
+                            <span class="stat-label">Customer Rating</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1700+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="menu-header">
+                <span class="section-label">Our Menu</span>
+                <h2 class="section-title">Authentic Italian Cuisine</h2>
+                <p class="section-description">Every dish is crafted with passion and premium ingredients</p>
+            </div>
+
+            <!-- Menu Tabs -->
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="all">All</button>
+                <button class="menu-tab" data-category="pizzas">Pizzas</button>
+                <button class="menu-tab" data-category="pasta">Pasta</button>
+                <button class="menu-tab" data-category="starters">Starters</button>
+                <button class="menu-tab" data-category="desserts">Desserts</button>
+                <button class="menu-tab" data-category="beverages">Beverages</button>
+            </div>
+
+            <!-- Menu Items Container -->
+            <div class="menu-items" id="menuItems">
+                <!-- Menu items will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef's Recommendations -->
+    <section class="recommendations">
+        <div class="container">
+            <span class="section-label">Chef's Selection</span>
+            <h2 class="section-title">Must-Try Dishes</h2>
+            <div class="recommendations-grid">
+                <div class="recommendation-card">
+                    <div class="recommendation-badge">⭐ Customer Favourite</div>
+                    <h3>Tiramisu</h3>
+                    <p>Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream</p>
+                </div>
+                <div class="recommendation-card">
+                    <div class="recommendation-badge">⭐ Classic Perfection</div>
+                    <h3>Margherita Pizza Napolitana</h3>
+                    <p>Wood-fired pizza with San Marzano tomatoes, fresh mozzarella, and basil</p>
+                </div>
+                <div class="recommendation-card">
+                    <div class="recommendation-badge">⭐ Rich & Indulgent</div>
+                    <h3>Italian Hot Chocolate</h3>
+                    <p>Thick, velvety hot chocolate made the traditional Italian way</p>
+                </div>
+                <div class="recommendation-card">
+                    <div class="recommendation-badge">⭐ Handmade Delight</div>
+                    <h3>Gnudi</h3>
+                    <p>Soft ricotta and spinach dumplings in sage butter sauce</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <span class="section-label">Visual Experience</span>
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);">
+
+                    <img src="./img/inside.webp" alt="">
+
+
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #228B22 0%, #90EE90 100%);">
+                    <img src="./img/outside.jpg" alt="">
+
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);">
+                    <img src="./img/wooden-pizza.webp" alt="">
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #DC143C 0%, #FF6347 100%);">
+                    <img src="./img/pasta.webp" alt="">
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #6B4423 0%, #CD853F 100%);">
+                    <img src="./img/unnamed.webp" alt="">
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #4B0082 0%, #8A2BE2 100%);">
+                    <img src="./img/seatings.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <span class="section-label">Testimonials</span>
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="reviews-rating">
+                <span class="rating-score">4.3</span>
+                <div class="rating-stars">★★★★☆</div>
+                <span class="rating-count">Based on 1,700+ reviews</span>
+            </div>
+            <div class="reviews-grid" id="reviewsGrid">
+                <!-- Reviews will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section class="reservations" id="reservations">
+        <div class="container">
+            <div class="reservations-content">
+                <div class="reservations-info">
+                    <span class="section-label">Book Your Table</span>
+                    <h2 class="section-title">Reserve Your Experience</h2>
+                    <p>Experience authentic Italian cuisine in a warm and elegant setting. Our team is ready to make your dining experience unforgettable.</p>
+                    <div class="hours-info">
+                        <h3>Operating Hours</h3>
+                        <p class="hours">Monday – Sunday: 12:00 PM – 11:00 PM</p>
+                        <p class="note">Peak hours: Evenings & weekends</p>
+                    </div>
+                    <div class="contact-quick">
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <strong>Call Us</strong>
+                                <p>+91 93533 50092</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <strong>Email Us</strong>
+                                <p>hello@spettacolare.in</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reservations-form">
+                    <form id="reservationForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Time *</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guests">Number of Guests *</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="">Select...</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6">6 Guests</option>
+                                    <option value="7+">7+ Guests</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="occasion">Occasion</label>
+                                <select id="occasion" name="occasion">
+                                    <option value="">Select...</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="date">Date Night</option>
+                                    <option value="business">Business Dinner</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="requests">Special Requests</label>
+                            <textarea id="requests" name="requests" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Reserve Table</button>
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Visit Us</h2>
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">📍</span>
+                            <div>
+                                <strong>Address</strong>
+                                <p>208, Paramahansa Yogananda Rd,<br>Stage 2, Hoysala Nagar, Indiranagar,<br>Bengaluru, Karnataka 560038</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📞</span>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>+91 93533 50092</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📧</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p>hello@spettacolare.in</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">⏰</span>
+                            <div>
+                                <strong>Hours</strong>
+                                <p>Open Daily: 12:00 PM – 11:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Google Maps</a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <p>Interactive Map</p>
+                        <span>Indiranagar, Bengaluru</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Spettacolare</h3>
+                    <p>Authentic Italian Restaurant</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#reservations">Reservations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>📍 Indiranagar, Bengaluru</p>
+                    <p>📞 +91 93533 50092</p>
+                    <p>⏰ 12 PM – 11 PM Daily</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Spettacolare. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
