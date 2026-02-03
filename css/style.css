@@ -8,6 +8,12 @@
    CSS VARIABLES
    ============================================ */
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
 :root {
     /* Colors - Elegant Italian Palette */
     --primary-gold: #C9A961;
@@ -1065,12 +1071,16 @@ option {
 
 .detail-item {
     display: flex;
-    gap: var(--spacing-md);
+    gap: var(--spacing-sm);
     padding: var(--spacing-md);
-    background: var(--white);
-    border-radius: 4px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
+.detail-item > div {
+    min-width: 0;
+}
+
 
 .detail-icon {
     font-size: 2rem;
@@ -1274,6 +1284,23 @@ option {
     .gallery-item {
         height: 260px;
     }
+   .contact-grid {
+    width: 100%;
+    overflow-x: hidden;
+   }
+   .contact-details {
+    width: 100%;
+   }
+   .detail-item {
+    flex-direction: row;
+    align-items: flex-start;
+   }
+   .detail-item p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+
 }
 
 @media (max-width: 480px) {
@@ -1294,4 +1321,5 @@ option {
     }
    
 }
+
 
