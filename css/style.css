@@ -12,6 +12,10 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+.navbar .container {
+    min-width: 0;
+}
+
 
 
 :root {
@@ -276,8 +280,9 @@ option {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--primary-gold);
-    margin-top: -5px;
+    margin-top: 4px;
 }
+
 
 .nav-menu {
     display: flex;
@@ -519,8 +524,8 @@ option {
     position: absolute;
     top: 20px;
     left: 20px;
-    right: -20px;
-    bottom: -20px;
+    right: -12px;
+    bottom: -12px;
     border: 2px solid var(--primary-gold);
     border-radius: 4px;
 }
@@ -972,6 +977,11 @@ option {
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-md);
 }
+.contact-info,
+.contact-map {
+    min-width: 0;
+}
+
 
 .form-group label {
     display: block;
@@ -1105,6 +1115,7 @@ option {
 .social-links {
     display: flex;
     gap: var(--spacing-md);
+   flex-wrap: wrap;
 }
 
 .social-link {
@@ -1127,6 +1138,11 @@ option {
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.map-wrapper {
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
 }
 
 .map-placeholder {
@@ -1243,6 +1259,10 @@ option {
     .nav-menu.active {
         right: 0;
     }
+   .nav-tagline {
+        margin-top: 6px;
+        font-size: 0.65rem;
+    }
     .mobile-menu-toggle {
         display: flex;
         z-index: 1001;
@@ -1268,6 +1288,10 @@ option {
     .about-stats {
         grid-template-columns: 1fr;
     }
+   .image-frame {
+        right: 0;
+        bottom: 0;
+    }
     .form-row {
         grid-template-columns: 1fr;
     }
@@ -1276,7 +1300,7 @@ option {
         text-align: center;
     }
     .social-links {
-        justify-content: center;
+        justify-content: flex-start; 
     }
    .about-image {
         height: 400px;
@@ -1291,6 +1315,17 @@ option {
    .contact-details {
     width: 100%;
    }
+   .contact-map {
+        width: 100%;
+    }
+
+    .map-placeholder {
+        min-height: 260px;
+        height: 260px;
+    }
+   .map-wrapper {
+        height: 260px;
+    }
    .detail-item {
     flex-direction: row;
     align-items: flex-start;
@@ -1321,5 +1356,6 @@ option {
     }
    
 }
+
 
 
